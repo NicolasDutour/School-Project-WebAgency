@@ -73,6 +73,11 @@ nav a:hover, nav a.active {
 
 .texte {
   display: flex;
+  align-items: center;
+}
+
+.details {
+  padding-left: 15px;
 }
 
 /* PORTFOLIO */
