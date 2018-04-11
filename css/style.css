@@ -59,7 +59,7 @@ nav a {
 
 nav a:hover, nav a.active {
   border-top: 2px solid #5cadd3;
-  color: ##5cadd3;
+  color: #5cadd3;
 }
 
 /* SERVICES */
