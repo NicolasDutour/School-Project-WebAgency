@@ -1,0 +1,172 @@
+/* GENERAL */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf.ttf') format('truetype'),
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', Arial, serif;
+}
+
+#services, #portfolio {
+  padding: 50px;
+}
+
+.titre {
+  max-width: 700px;
+  margin: auto;
+}
+
+hr {
+  width: 700px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section p {
+  text-align: center;
+}
+
+.point {
+  border: 5px solid #5cadd3;
+  border-radius: 100px;
+  width: 1px;
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  /* position: fixed; */
+}
+
+nav a {
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+  border-top: 2px solid #5cadd3;
+  color: ##5cadd3;
+}
+
+/* SERVICES */
+
+.service {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.texte {
+  display: flex;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  background-color: #f5f5f5;
+}
+
+.portfolio_categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.categorie {
+  display: inline-block;
+  background-color: #e5e5e5;
+  padding: 15px;
+  text-align: center;
+}
+
+.categorie a {
+  text-decoration: none;
+  color: #000;
+}
+
+.categorie a:hover, .categorie a.active {
+  background-color: #5cadd3;
+  color: #fff;
+}
+
+.liste_projets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.item {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.item img {
+  width: 100%;
+}
+
+
+/* CONTACT */
+
+
+.googlemap {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.contact_form {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin: 60px auto 0;
+  padding: 10px;
+  background: black;
+  height: auto;
+  opacity: .45;
+  color: white;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
