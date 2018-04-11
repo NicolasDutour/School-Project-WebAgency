@@ -99,12 +99,12 @@ nav a:hover, nav a.active {
   text-align: center;
 }
 
-.categorie a {
+.portfolio_categories a {
   text-decoration: none;
   color: #000;
 }
 
-.categorie a:hover, .categorie a.active {
+.portfolio_categories a:hover, .portfolio_categories a.active {
   background-color: #5cadd3;
   color: #fff;
 }
