@@ -48,7 +48,8 @@ header {
   align-items: center;
   max-width: 1100px;
   margin: auto;
-  /* position: fixed; */
+  padding: 10px;
+  /* position: fixed; ?????????? */
 }
 
 nav a {
@@ -69,6 +70,14 @@ nav a:hover, nav a.active {
   max-width: 1100px;
   margin: auto;
   padding-top: 50px;
+}
+
+.service .icone .fas {
+  color: #5cadd3;
+  font-size: 28px;
+  border: 1px solid grey;
+  border-radius: 100px;
+  padding: 10px;
 }
 
 .texte {
@@ -107,6 +116,7 @@ nav a:hover, nav a.active {
 .portfolio_categories a:hover, .portfolio_categories a.active {
   background-color: #5cadd3;
   color: #fff;
+  border-bottom: 3px solid #468cad;
 }
 
 .liste_projets {
@@ -114,13 +124,12 @@ nav a:hover, nav a.active {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  max-width: 900px;
   margin: 20px auto;
 }
 
 .item {
-  width: 200px;
-  margin-bottom: 20px;
+  width: 340px;
+  margin-bottom: 25px;
 }
 
 .item img {
@@ -130,26 +139,32 @@ nav a:hover, nav a.active {
 
 /* CONTACT */
 
+#contact {
+  position: relative;
+}
 
 .googlemap {
-  height: 100%;
-  width: 100%;
-  position:absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+
 }
 
 .contact_form {
-  position: relative;
-  z-index: 1;
-  width: 300px;
-  margin: 60px auto 0;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 350px;
   padding: 10px;
-  background: black;
+  background-color: #fff;
   height: auto;
-  opacity: .45;
-  color: white;
+  opacity: 0.8;
+  color: #000;
+}
+
+.contact_form p, .contact_form h4 {
+  margin: 2px;
+}
+
+.contact_form h3 {
+  font-size: 22px;
 }
 
 input[type=text], select, textarea {
@@ -160,18 +175,14 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #5cadd3;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
+    border-bottom: 3px solid #4494bb;
 }
