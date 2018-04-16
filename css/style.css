@@ -1,14 +1,10 @@
-GENERAL
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Black.ttf.ttf') format('truetype'),
-}
+/* GENERAL */
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', Arial, serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 
@@ -85,6 +81,7 @@ nav a:hover, nav a.active {
 .titre h1 {
   text-transform: uppercase;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 #slider .titre .colorBlue {
@@ -95,7 +92,7 @@ nav a:hover, nav a.active {
   text-align: left;
   color: #fff;
   margin-bottom: 50px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 #slider a {
@@ -202,8 +199,8 @@ nav a:hover, nav a.active {
 
 .flecheBasActive {
   position: absolute;
-  top: 70%;
-  left: 43%;
+  top: 65%;
+  left: 41%;
   color: #468cad;
   font-size: 28px;
 }
