@@ -63,25 +63,26 @@ nav a:hover, nav a.active {
 
 
 #slider {
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
+  height: 300px;
 }
 
-.slides img {
-  max-width: 100%;
+.slides {
+  background: url("images/slider/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #slider .titre {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  max-width: 450px;
+  width: 50%;
 }
 
 .titre h1 {
   text-transform: uppercase;
-  color: #fff;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 2rem;
 }
 
 #slider .titre .colorBlue {
@@ -90,7 +91,7 @@ nav a:hover, nav a.active {
 
 #slider p {
   text-align: left;
-  color: #fff;
+  color: #000;
   margin-bottom: 50px;
   font-size: 1rem;
 }
@@ -229,11 +230,9 @@ nav a:hover, nav a.active {
   left: 0;
   right: 0;
   background-color: rgba(0,0,0,0.5);
-  overflow: hidden;
   width: 100%;
   height: 0;
   transition: .5s ease;
-  z-index: 0;
 }
 
 .item:hover .overlay {
@@ -268,7 +267,6 @@ nav a:hover, nav a.active {
   border: 2px solid #fff;
   border-radius: 100px;
   padding: 10px;
-  z-index: 1;
 }
 
 
