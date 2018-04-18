@@ -7,7 +7,6 @@ body {
   font-size: 14px;
 }
 
-
 #services, #portfolio {
   padding: 50px;
 }
@@ -61,28 +60,24 @@ nav a:hover, nav a.active {
 
 /* SLIDER */
 
-
 #slider {
-  /* position: relative; */
-  /* overflow: hidden; */
-  height: 300px;
-}
-
-.slides {
-  background: url("images/slider/bg1.jpg");
+  display: flex;
+  align-items: center;
+  background: url("../images/slider/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
 }
 
 #slider .titre {
-  width: 50%;
+  margin-left: 80px;
 }
 
 .titre h1 {
   text-transform: uppercase;
-  color: #000;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 #slider .titre .colorBlue {
@@ -91,7 +86,7 @@ nav a:hover, nav a.active {
 
 #slider p {
   text-align: left;
-  color: #000;
+  color: #fff;
   margin-bottom: 50px;
   font-size: 1rem;
 }
@@ -109,24 +104,21 @@ nav a:hover, nav a.active {
 
 
 .flecheGauche, .flecheDroite {
-  position: absolute;
-  top: calc(50% - 40px);
   color: #fff;
   font-size: 28px;
   background-color: #404146;
   border: none;
-  border-radius: 100px;
   cursor: pointer;
+  padding: 10px;
 }
 
 .flecheGauche {
-  padding: 20px 20px 20px 40px;
-  left: -35px;
+  border-radius: 0 50% 50% 0;
 }
 
 .flecheDroite {
-  padding: 20px 40px 20px 20px;
-  right: -35px;
+  border-radius: 50% 0 0 50%;
+  margin-left: auto;
 }
 
 /* SERVICES */
@@ -136,6 +128,11 @@ nav a:hover, nav a.active {
   max-width: 1100px;
   margin: auto;
   padding-top: 50px;
+}
+
+.services_image img {
+  width: 100%;
+  min-width: 100px;
 }
 
 .service .icone {
@@ -171,6 +168,9 @@ nav a:hover, nav a.active {
 
 #portfolio {
   background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .portfolio_categories {
@@ -215,12 +215,12 @@ nav a:hover, nav a.active {
 }
 
 .item {
-  width: 340px;
+  max-width: 340px;
   margin-bottom: 25px;
   position: relative;
 }
 
-.item img {
+.item img, .item_full img {
   width: 100%;
 }
 
@@ -242,11 +242,6 @@ nav a:hover, nav a.active {
 .text {
   padding: 5px;
   color: white;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
 }
 
 .text p, .text h4 {
@@ -276,8 +271,10 @@ nav a:hover, nav a.active {
   position: relative;
 }
 
-.googlemap {
-}
+/* #map {
+  height: 400px;
+  width: 100%;
+} */
 
 .contact_form {
   position: absolute;
@@ -335,26 +332,31 @@ input[type=submit] {
     margin: 50px 0 50px 0;
   }
 
+  #slider .titre {
+    max-width: 300px;
+  }
+
   .service {
     flex-direction: column;
     align-items: center;
   }
 
-  .titre h1 {
-    font-size: 16px;
-  }
-
-  .titre p {
-    font-size: 12px;
-  }
-
-  #slider .titre {
-    max-width: 300px;
-  }
 }
 
 
 @media screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+
+  #slider {
+    display: none;
+  }
+
+  .flecheBasActive {
+    top: 73%;
+  }
+
   #contact, .contact_form {
     position: static;
   }
@@ -364,9 +366,5 @@ input[type=submit] {
     width: 70%;
     margin: auto;
     margin-top: 50px;
-  }
-
-  #slider {
-    display: none;
   }
 }
