@@ -239,7 +239,6 @@ nav a:hover, nav a.active {
 }
 
 .overlay {
-  overflow: hidden;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -256,8 +255,8 @@ nav a:hover, nav a.active {
 }
 
 .text {
-  padding: 5px;
   color: white;
+  padding: 10px;
 }
 
 .text p, .text h4 {
@@ -266,17 +265,18 @@ nav a:hover, nav a.active {
 
 .text p {
   font-size: 14px;
+  text-align: left;
+  position: relative;
 }
 
-.overlay .icone {
+.overlay .text .fas.fa-eye {
   position: absolute;
-  width: 20px;
   top: -20px;
-  right: 10%;
+  right: 10px;
   color: #fff;
   background-color: #5cadd3;
   border: 2px solid #fff;
-  border-radius: 100px;
+  border-radius: 50%;
   padding: 10px;
 }
 
