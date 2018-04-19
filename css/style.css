@@ -139,6 +139,10 @@ nav a:hover, nav a.active {
   position: relative;
 }
 
+.service .icone i.fas.fa-chart-pie {
+  padding: 11px 9px;
+}
+
 .service .icone .point {
   position: absolute;
   top: 45%;
@@ -190,20 +194,30 @@ nav a:hover, nav a.active {
 .portfolio_categories a {
   text-decoration: none;
   color: #000;
+  padding: 10px;
+  background-color: #e5e5e5;
+  position: relative;
 }
 
-.portfolio_categories .categorie:hover, .portfolio_categories .categorie.active {
+.portfolio_categories a:hover, .portfolio_categories a.active {
   background-color: #5cadd3;
   color: #fff;
   border-bottom: 3px solid #468cad;
 }
 
-.flecheBasActive {
-  position: absolute;
-  top: 65%;
-  left: 41%;
-  color: #468cad;
-  font-size: 28px;
+.portfolio_categories a.active:after {
+  top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(92, 173, 211, 0);
+	border-top-color: #468cad;
+	border-width: 10px;
+	margin-left: -10px;
 }
 
 .liste_projets {
