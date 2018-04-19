@@ -225,7 +225,7 @@ nav a:hover, nav a.active {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 20px auto;
+  margin: 20px 20px;
 }
 
 .item {
