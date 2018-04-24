@@ -289,10 +289,10 @@ nav a:hover, nav a.active {
   position: relative;
 }
 
-/* #map {
-  height: 400px;
+#map iframe {
+  height: 750px;
   width: 100%;
-} */
+}
 
 .contact_form {
   position: absolute;
