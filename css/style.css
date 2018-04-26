@@ -292,9 +292,22 @@ nav a:hover, nav a.active {
   position: relative;
 }
 
+#map {
+  position: relative;
+}
+
 #map iframe {
   height: 750px;
-  width: 1578px;
+  width: 1570px;
+}
+
+.bgcolorblue {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(61, 196, 212, 0.5);
 }
 
 .contact_form {
