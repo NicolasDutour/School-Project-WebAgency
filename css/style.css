@@ -339,7 +339,7 @@ nav a:hover, nav a.active {
   background-color: rgba(61, 196, 212, 0.5);
 }
 
-.contact_form {
+#contact_form {
   position: absolute;
   top: 10%;
   right: 10%;
@@ -351,11 +351,11 @@ nav a:hover, nav a.active {
   color: #000;
 }
 
-.contact_form p, .contact_form h4 {
+#contact_form p, #contact_form h4 {
   margin: 2px;
 }
 
-.contact_form h3 {
+#contact_form h3 {
   font-size: 22px;
 }
 
@@ -436,11 +436,11 @@ input[type=submit] {
     text-align: center;
   }
 
-  #contact, .contact_form {
+  #contact, #contact_form {
     position: static;
   }
 
-  .contact_form {
+  #contact_form {
     background-color: #C6D4DA;
     width: 70%;
     margin: auto;
